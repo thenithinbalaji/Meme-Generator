@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+
+.memeText {
+    text-align: center;
+    width: 100%;
+
+    line-height: 2.8rem;
+    font-size: 3rem;
+
+    font-family: Impact;
+    color: white;
+    text-transform: uppercase;
+
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.topText {
+    position: absolute;
+    top: 5px;
 }
+
+.bottomText {
+    position: absolute;
+    bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .memeText {
+        line-height: 2rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .memeText {
+        line-height: 1.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@tailwind utilities;

@@ -1,5 +1,6 @@
 {
   "name": "meme-generator",
+  "homepage": "http://thenithinbalaji.github.io/Meme-Generator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
